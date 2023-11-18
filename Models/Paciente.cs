@@ -1,4 +1,6 @@
-﻿namespace CiudadanosSanos.Models
+﻿using System.Numerics;
+
+namespace CiudadanosSanos.Models
 {
     public class Paciente
     {
@@ -7,7 +9,7 @@
         public string genero { get; set; }
         public string TipoDocumento { get; set; }
         public int NroDocumento {  get; set; }
-        public int Contacto { get; set; }
+        public long Contacto { get; set; }
         public int edad { get; set; } 
         public ICollection<Consulta> Consultas { get; set; } //Propiedad de Navegacion
     }

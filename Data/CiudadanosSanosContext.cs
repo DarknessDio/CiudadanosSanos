@@ -3,8 +3,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CiudadanosSanos.Data
 {
-    internal class CiudadanosSanosContext : DbContext
+    public class CiudadanosSanosContext : DbContext
     {
+        public CiudadanosSanosContext(DbContextOptions options) : base(options)
+        {
+        }
         public DbSet<Paciente> Paciente { get; set;}
         public DbSet<Consulta> Consulta { get; set;}
 
