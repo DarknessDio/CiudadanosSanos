@@ -11,6 +11,6 @@ namespace CiudadanosSanos.Models
         public int NroDocumento {  get; set; }
         public long Contacto { get; set; }
         public int edad { get; set; } 
-        public ICollection<Consulta> Consultas { get; set; } //Propiedad de Navegacion
+        public ICollection<Consulta>? Consultas { get; set; } //Propiedad de Navegacion
     }
 }
