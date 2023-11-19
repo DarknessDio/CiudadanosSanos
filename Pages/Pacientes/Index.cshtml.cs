@@ -3,9 +3,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using CiudadanosSanos.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CiudadanosSanos.Pages.Pacientes
 {
+    [Authorize]
     public class IndexModel : PageModel
     {
         private readonly CiudadanosSanosContext _context;
